@@ -34,7 +34,7 @@ export function Nav() {
           aria-label="Home"
           className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-sky-400 to-blue-500 text-xl font-extrabold tracking-tight text-white shadow-lg shadow-sky-400/30 transition-transform hover:scale-105"
         >
-          V
+          LHV
         </a>
         <div className="flex items-center gap-2 sm:gap-4">
           <ul className="flex items-center gap-0.5">
