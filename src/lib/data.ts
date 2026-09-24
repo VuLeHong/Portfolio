@@ -8,47 +8,23 @@ export const profile = {
   email: "vulehong0406@gmail.com",
   phone: "(+84) 915176876",
   availability: "Open to fresher and junior data roles",
+  resume: "/resume.pdf",
   social: {
     github: "https://github.com/VuLeHong",
     linkedin: "https://www.linkedin.com/in/vu-le-hong/",
   },
-  skillGroups: [
-    {
-      title: "Data Engineering & Cloud",
-      skills: [
-        "SQL",
-        "Python",
-        "Apache Spark",
-        "Airflow",
-        "Kafka",
-        "dbt",
-        "Microsoft Fabric",
-        "Azure Services",
-        "GCP Services",
-        "BigQuery",
-      ],
-    },
-    {
-      title: "Backend & Tools",
-      skills: [
-        "JavaScript",
-        "TypeScript",
-        "Next.js",
-        "Node.js",
-        "NestJS",
-        "Docker",
-        "Selenium",
-        "Beautiful Soup",
-        "PostgreSQL",
-        "MongoDB",
-      ],
-    },
+  skills: [
+    "Cloud Services (Azure, GCP)",
+    "Airflow",
+    "Spark",
+    "SQL",
+    "Typescript",
   ],
 };
 
 export const experiences = [
   {
-    role: "Data Engineer Intern",
+    role: "Data Engineer",
     company: "Norrin",
     period: "April 2026 — June 2026",
     highlights: [
@@ -58,7 +34,7 @@ export const experiences = [
     ],
   },
   {
-    role: "Data Engineer Intern",
+    role: "Data Engineer",
     company: "WATA Software",
     period: "December 2025 — March 2026",
     highlights: [
@@ -68,7 +44,7 @@ export const experiences = [
     ],
   },
   {
-    role: "Software Engineer Intern",
+    role: "Software Engineer",
     company: "Lumination",
     period: "March 2025 — June 2025",
     highlights: [
@@ -79,22 +55,9 @@ export const experiences = [
   },
 ];
 
-export const education = [
-  {
-    school: "University of Information Technology (UIT)",
-    degree: "Computer Science",
-    detail: "GPA: 84.97/100",
-    period: "2023 — Now",
-  },
-  {
-    school: "IELTS Academic",
-    degree: "Certificate",
-    detail: "6.0 Overall — Issued Feb 2023",
-    period: "Feb 2023",
-  },
-];
+export type Certification = { title: string; href?: string };
 
-export const certifications = [
+export const certifications: Certification[] = [
   {
     title: "Microsoft Certified: Azure Fundamentals (AZ-900)",
     href: "https://learn.microsoft.com/en-us/users/lehongvu-3668/credentials/16c8ff027dba9b72",
@@ -103,25 +66,23 @@ export const certifications = [
     title: "Microsoft Certified: Fabric Data Engineer Associate (DP-700)",
     href: "https://learn.microsoft.com/en-us/users/lehongvu-3668/credentials/27dd9caa37dade8d",
   },
+  {
+    title: "IELTS Academic — Overall 6.0",
+  },
 ];
 
 export const projects = [
   {
-    slug: "ecommerce-lakehouse",
     title: "E-commerce Analytics and Recommendation Lakehouse",
+    image: "/lakehouse-architecture.png",
     description:
       "This project implements a unified Lakehouse architecture for e-commerce analytics and real-time recommendation processing. The system integrates batch data processing and streaming event processing within the same platform, allowing historical analytics, recommendation model training, dashboard visualization, and real-time recommendation reranking to operate on shared Lakehouse data layers.",
-    highlights: [
-      "Designed a unified Lakehouse architecture for e-commerce analytics and recommendations, using Medallion Architecture to organize raw data, cleaned data, and analytics-ready datasets across Bronze, Silver, and Gold layers.",
-      "Built batch and streaming data pipelines using Apache Spark for data transformation, Kafka for real-time event ingestion, Airflow for workflow orchestration, and MinIO with Apache Iceberg and Nessie for Lakehouse storage and table version management.",
-      "Used Dremio to query Gold-layer datasets and support dashboard analytics, while Spark MLlib ALS was used to train recommendation models and re-rank product recommendations from streaming user behavior events.",
-    ],
-    stack: ["Spark", "Kafka", "Airflow", "Iceberg", "Dremio", "MLlib"],
-    href: "https://github.com/VuLeHong",
+    stack: ["Spark", "Kafka", "Airflow", "Iceberg", "Dremio", "MLflow", "Superset", "Minio", "Nessie"],
+    href: "https://github.com/VuLeHong/E-commerce-lakehouse",
   },
   {
-    slug: "path-of-the-lotus-mind",
     title: "Path of the Lotus Mind",
+    image: "/lotus/1.png",
     description:
       "An Android productivity app that turns focused study or work sessions into a cultivation journey — users start a focus session, earn EXP, collect rewards, and progress through five cultivation realms. Built with Kotlin and Jetpack Compose.",
     stack: ["Kotlin", "Jetpack Compose", "Room", "Coroutines", "Navigation Compose"],
