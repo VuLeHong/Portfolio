@@ -8,7 +8,7 @@ export const profile = {
   email: "vulehong0406@gmail.com",
   phone: "(+84) 915176876",
   availability: "Open to fresher and junior data roles",
-  resume: "/resume.pdf",
+  resume: "/LeHongVu.pdf",
   social: {
     github: "https://github.com/VuLeHong",
     linkedin: "https://www.linkedin.com/in/vu-le-hong/",
