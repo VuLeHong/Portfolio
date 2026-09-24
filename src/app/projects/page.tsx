@@ -22,7 +22,7 @@ export default function ProjectsPage() {
         <div className="absolute left-[5%] top-32 h-64 w-64 rounded-full bg-blue-400/10 blur-[100px]" />
       </div>
 
-      <div className="mx-auto w-[70%] py-16">
+      <div className="mx-auto w-[90%] lg:w-[70%] py-16">
         <Link
           href="/#projects"
           className="animate-fade-up inline-flex items-center gap-1.5 text-sm font-semibold text-zinc-500 transition-colors hover:text-sky-600"

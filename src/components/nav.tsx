@@ -28,25 +28,27 @@ export function Nav() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-zinc-200/80 bg-white/80 backdrop-blur">
-      <nav className="mx-auto flex h-16 w-[70%] items-center justify-between">
+      <nav className="mx-auto flex h-16 w-[90%] items-center justify-between gap-2 lg:w-[70%]">
         <a
           href={pathname === "/" ? "#about" : "/"}
           aria-label="Home"
-          className="flex items-center gap-2 text-lg font-extrabold text-zinc-900 sm:text-xl"
+          className="flex items-center gap-2 font-extrabold text-zinc-900"
         >
-          <div className="flex h-10 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-sky-400 to-blue-500 text-xl font-bold tracking-tight text-white shadow-lg shadow-sky-400/30 transition-transform hover:scale-105">
+          <span className="flex h-9 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-sky-400 to-blue-500 text-base font-bold tracking-tight text-white shadow-lg shadow-sky-400/30 transition-transform hover:scale-105 sm:h-10 sm:w-12 sm:text-xl">
             VLH
-          </div>
-          Le Hong Vu
+          </span>
+          <span className="hidden text-lg sm:inline sm:text-xl">
+            Le Hong Vu
+          </span>
         </a>
-        <div className="flex items-center gap-2 sm:gap-4">
+        <div className="flex items-center gap-1 sm:gap-4">
           <ul className="flex items-center gap-0.5">
             {sections.map((section) => (
               <li key={section.id}>
                 <a
                   href={hrefFor(section.id)}
                   onClick={() => onSelect(section.id)}
-                  className={`rounded-full px-4 py-2 text-base font-medium transition-all ${
+                  className={`rounded-full px-2 py-1.5 text-sm font-medium transition-all sm:px-4 sm:py-2 sm:text-base ${
                     flash === section.id
                       ? "bg-sky-400/15 text-sky-700 shadow-sm shadow-sky-400/20"
                       : "text-zinc-500 hover:text-zinc-900"
@@ -61,10 +63,11 @@ export function Nav() {
             href={profile.resume}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-sky-400 to-blue-500 px-4 py-2 text-sm font-bold text-white shadow-md shadow-sky-400/25 transition-all hover:shadow-lg hover:shadow-sky-400/40 hover:brightness-110 sm:text-base"
+            aria-label="View CV"
+            className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-r from-sky-400 to-blue-500 text-sm font-bold text-white shadow-md shadow-sky-400/25 transition-all hover:shadow-lg hover:shadow-sky-400/40 hover:brightness-110 sm:h-auto sm:w-auto sm:gap-1.5 sm:px-4 sm:py-2 sm:text-base"
           >
             <FileTextIcon className="h-4 w-4" />
-            CV
+            <span className="hidden sm:inline">CV</span>
           </a>
         </div>
       </nav>

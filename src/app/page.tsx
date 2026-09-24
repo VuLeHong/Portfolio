@@ -57,7 +57,7 @@ function SubHeading({
 
 function Separator() {
   return (
-    <div aria-hidden className="mx-auto w-[70%]">
+    <div aria-hidden className="mx-auto w-[90%] lg:w-[70%]">
       <hr className="border-t border-dashed border-zinc-300" />
     </div>
   );
@@ -77,7 +77,7 @@ export default function Home() {
           <div className="absolute left-[2%] top-40 h-64 w-64 rounded-full bg-cyan-300/10 blur-[100px]" />
         </div>
 
-        <div className="mx-auto w-[70%] pb-16 pt-28">
+        <div className="mx-auto w-[90%] lg:w-[70%] pb-16 pt-28">
           {/* Introduction */}
           <div className="flex flex-col-reverse items-center gap-12 lg:flex-row lg:justify-between">
             <div className="flex-1 text-center lg:text-left">
@@ -249,7 +249,7 @@ export default function Home() {
       <Separator />
 
       {/* Experiences */}
-      <section id="experience" className="mx-auto w-[70%] py-16">
+      <section id="experience" className="mx-auto w-[90%] lg:w-[70%] py-16">
         <SectionHeading
           icon={<BriefcaseIcon className="h-6 w-6" />}
           title="Experiences"
@@ -294,7 +294,7 @@ export default function Home() {
       <Separator />
 
       {/* Projects */}
-      <section id="projects" className="mx-auto w-[70%] py-16">
+      <section id="projects" className="mx-auto w-[90%] lg:w-[70%] py-16">
         <SectionHeading
           icon={<SparklesIcon className="h-6 w-6" />}
           title="Projects"
@@ -365,7 +365,7 @@ export default function Home() {
       <Separator />
 
       {/* Contact */}
-      <section id="contact" className="mx-auto w-[70%] py-16">
+      <section id="contact" className="mx-auto w-[90%] lg:w-[70%] py-16">
         <SectionHeading icon={<MailIcon className="h-6 w-6" />} title="Contact" />
         <p className="animate-fade-up mb-10 max-w-2xl text-base font-medium text-zinc-600">
           Have a project in mind or just want to say hi? My inbox is always

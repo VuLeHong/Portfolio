@@ -5,7 +5,7 @@ import { GitHubIcon, LinkedInIcon, MailIcon } from "@/components/icons";
 export function Footer() {
   return (
     <footer className="border-t border-zinc-200">
-      <div className="mx-auto flex w-[70%] flex-col items-center justify-between gap-4 px-0 py-8 sm:flex-row">
+      <div className="mx-auto flex w-[90%] lg:w-[70%] flex-col items-center justify-between gap-4 px-0 py-8 sm:flex-row">
         <p className="text-sm text-zinc-500">
           © {new Date().getFullYear()} {profile.name}. All rights reserved.
         </p>
