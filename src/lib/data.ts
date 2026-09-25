@@ -82,7 +82,7 @@ export const projects = [
   },
   {
     title: "Path of the Lotus Mind",
-    image: "/lotus/1.png",
+    image: "/lotus/intro_bg.png",
     description:
       "An Android productivity app that turns focused study or work sessions into a cultivation journey — users start a focus session, earn EXP, collect rewards, and progress through five cultivation realms. Built with Kotlin and Jetpack Compose.",
     stack: ["Kotlin", "Jetpack Compose", "Room", "Coroutines", "Navigation Compose"],
