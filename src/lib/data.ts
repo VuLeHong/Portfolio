@@ -8,7 +8,7 @@ export const profile = {
   email: "vulehong0406@gmail.com",
   phone: "(+84) 915176876",
   availability: "Open to fresher and junior data roles",
-  resume: "/LeHongVu.pdf",
+  resume: "/Resume_LeHongVu.pdf",
   social: {
     github: "https://github.com/VuLeHong",
     linkedin: "https://www.linkedin.com/in/vu-le-hong/",
@@ -28,7 +28,7 @@ export const experiences = [
     company: "Norrin",
     period: "April 2026 — June 2026",
     highlights: [
-      "Learned and applied Microsoft Azure and Microsoft Fabric services for cloud data engineering, and successfully passed the Microsoft AZ-900 and DP-700 certifications.",
+      "Maintained and troubleshot data pipelines based on client requests, investigating pipeline logs and resolving dataprocessing issues.",
       "Collaborated with a teammate to build an end-to-end Medallion pipeline in Microsoft Fabric, covering data ingestion, Bronze–Silver–Gold data transformation, and curated datasets for analytics.",
       "Developed an integration flow that triggered data processing from SharePoint events and returned processed data through an API endpoint when requested by users.",
     ],

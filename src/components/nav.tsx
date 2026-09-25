@@ -66,7 +66,7 @@ export function Nav() {
             aria-label="View CV"
             className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-r from-sky-400 to-blue-500 text-sm font-bold text-white shadow-md shadow-sky-400/25 transition-all hover:shadow-lg hover:shadow-sky-400/40 hover:brightness-110 sm:h-auto sm:w-auto sm:gap-1.5 sm:px-4 sm:py-2 sm:text-base"
           >
-            <FileTextIcon className="h-4 w-4" />
+            {/* <FileTextIcon className="h-2 w-2" /> */}
             <span className="hidden sm:inline">CV</span>
           </a>
         </div>
